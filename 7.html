@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Contact Us</title>
+		<style type="text/css">
+			 #map
+			{
+				height: 400px;  
+				width: 100%;
+			}
+			body{
+				margin:0;
+				padding:0;
+			}
+			#contact{
+				float:left;
+				margin:20px;
+				
+			}
+			#address{
+				
+				position:relative;
+				margin:20px;
+				
+			}
+			
+			#email{
+				
+				position:relative;
+				margin:20px;
+				
+			}
+			
+			.text{
+				position:relative;
+				font-family:comic sans ms;
+				font-size:150%;
+				color:black;
+				top:-80px; 
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="map"></div>
+    <script>
+  function initMap() {
+ 
+  var uluru = {lat: 28.970540,lng: 77.684951};
+ 
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK4khu2BQ7MOtyMVObseoLAgVX8NpG2R8&callback=initMap">
+</script>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <img  src="contact1.jpg" align="bottom" width="300px" height="250px">		
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp <img  src="location1.jpg" align="bottom" width="300px" height="250px">		
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp <img src="email1.jpg" align="bottom" width="300px" height="250px">			
+	</body>
+	 
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+      <h1> <em>Staff Login</em> </h1>
+	  <style type="text/css">
+		a{
+			text-decoration:none;
+		}
+		a:hover{
+			text-decoration:underline;
+c			color:red;			
+		}
+	  </style>
+	</head>
+	<body>
+	<script type="text/javascript">
+	function ff(){
+	 var username=document.getElementById("t1").value;
+	 var password=document.getElementById("t2").value;
+	 var a="adminlogin";
+	 var b="adminpassword123@";
+	 if(password==""){
+	 document.getElementById("messages").innerHTML="**Please fill password**";
+	 return false;
+	 }
+	  if((username==a) && (password==b)){
+	  return true;
+	  }
+	  else{
+	  document.getElementById("messages").innerHTML="**wrong username or password..**";
+	  return false;
+	  }
+	  }
+	  </script>
+	  <form  onsubmit=" return ff()" action="6.html">
+	  <strong>UserName</strong>: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" name="name" value="" STYLE="color:gray" id="t1"><br><br>
+	  <strong>Password</strong>: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="password" name="password" value="" id="t2">
+	  <span id="messages"></span><br><br><br><br>
+	  <strong>&nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="submit" value="Submit" target="_blank" >
+	  
+	  
+	  </form>
+	</body>
+</html>
